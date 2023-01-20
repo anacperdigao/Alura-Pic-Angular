@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,6 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class PhotoComponent {
-  description = 'Leão';
-  url = 'https://www.petz.com.br/blog/wp-content/uploads/2022/01/curiosidades-sobre-leao2.jpg'
+  @Input() description = '';
+  @Input() url = ''
 }

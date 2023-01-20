@@ -1,4 +1,9 @@
 <!-- Duas forma de one way data binding: ele sai do componente angular e vai pro dom -->
 <h1> {{ title }} </h1>
 
-<ap-photo></ap-photo>
+<ap-photo
+  *ngFor="let photo of photos"
+  [url]= "photo.url"
+  [description]= "photo.description">
+</ap-photo>
+
