@@ -1,6 +1,6 @@
 // Angular imports
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 // Components imports
 import { PhotoComponent } from './photo/photo.component';
@@ -10,7 +10,9 @@ import { PhotoComponent } from './photo/photo.component';
 
   declarations: [ PhotoComponent ],
 
-  exports: [ PhotoComponent ]
+  exports: [ PhotoComponent ],
+
+  imports: [ HttpClientModule ]
 })
 
 export class PhotosModule { }
